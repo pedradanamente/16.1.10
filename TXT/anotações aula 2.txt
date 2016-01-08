@@ -1,0 +1,38 @@
+pwd - mostra o diretorio aonde esta
+cd /tmp -  para entrar no diretorio de arquivo temporario
+mkdir - cria pasta
+touch - criar arquivo
+
+
+COMANDO DOS VI
+
+ESC => acessa o comando
+ESC  u => desfazer
+ESC :q! => sair sem salvar
+ESC : w => salvar
+ESC :x! => salvar a sair
+ESC :set number => numera as linhas
+ESC v(seleciona) y(copia) p(cola) => copia e cola
+ESC v(seleciona) c(recorta) p(cola) => recorta e cola
+ESC i => habilitar o modo digitação
+ESC dd => apagar linha inteira
+
+
+cat nomedoarquivo.extencao => mostra o arquivo 
+cat nomedoarquivo.extencao => mostra o aqruivo do mais recente ao mais antigo
+
+head arquivo => mostra as 10 linhas mais antigas do arquivo(10 primeiras)
+tail arquivo => mostra as 10 linhas mais recentes do arquivo(10 ultimas linhas)
+; usa- se para separar comandos, ou seja, se for precisa usar mais de um comando de uma só vez
+
+
+/var/log -> DIRETORIO DE LOGS
+
+auth -> autenticação de usuários
+dmesg -> mensagem de inicialização
+kern -> mensagem do kernel
+mail -> mensagens servidor de email
+samba -> compartilhamento e servifor de arquivos para embientes windows
+lastlog -> ultimo login no sistema
+
+

@@ -1,0 +1,12 @@
+  
+  Configurar uma das interfaces para DHCP
+
+  Criar compartilhamento chamado Aula no
+  diretório /dados/aula
+  Permitir escrita
+  usuários validos ana e joana
+  usuário de escrita ana
+  Permitir visualização
+  Nome do compartilhamento AULA
+
+  Criar os usuários joana e ana(sistema e samba)

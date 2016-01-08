@@ -1,0 +1,59 @@
+para ver todos os cache de proc, cd /proc
+
+- para ver informações do cpu
+less cpuinfo
+
+- para ver as informações de memoria ram usa-se o comando 
+less meminfo
+tb pode usa esse comando para ver as informações da memoria ram
+free -m
+
+- para ver as informações de partições 
+cat partitions
+fdisk -l
+
+- para mostrar todas as informações do hardware
+lspci
+
+- mostrar os endereços de portas
+less iports
+
+- mostra requesitos de interupção
+less interrupts
+
+-para ver a versão do linux que esta se usando, kernel, distribuição, etc
+cat version
+
+- mostra quanto tempo esta rodando (em segundos)
+cat uptime
+
+
+para filtrar as informções que serão pesquisadas 
+comando | grep -i informação_que_sera_filtrada
+
+para acessar o diretorio de drivers do ubuntu usa se o comando
+cd /lib/modules/`uname -r`/kernel/drivers
+
+para ajustar o console usa se o comando ]
+sudo dpkg-reconfigure console-setup
+para editar diretamente no arquivo
+nano /etc/default/console-setup
+
+para configurações de video
+http://www.hardware.com.br/livros/ferramentas-linux/configurando-video-etcx11xorg.conf.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+		***REVISÂO***
+
+1) ACESSAR O DIRETÓRIO /tmp
+2) APAGAR O CONTEÚDO DO DIRETÓRIO
+3) CRIAR A PASTA system
+4) COPIAR PARA A PASTA system:
+	/etc/passwd
+	/etc/group
+	/home
+	/var/log/kern*
+5) IDENTIFIQUE OS ITENS DE HARDWARE
+	FREQ DO PROCESSADOR
+	PLACA DE REDE
+	TAMANHO DO HD
+	PLACA DE VÍDEO
+	QUANTIDADE DE MEMÓRIA
+	QUANTO TEMPO SISTEMA ESTÁ ATIVO
+6) IDENTIFICAR ENDEREÇO IP/MASCARA/GATEWAY DO SEU HOST
+7) CONVERTER OS EXERCÍCIOS ACIMA PARA UM SCRIPT QUE MOSTRE CADA ITEM, AGUARDE O USUÁRIO TECLAR ENTER PARA EXIBIR O PRÓXIMO
+8)CONFIGURE SEU SISTEMA LINUX COM IP FIXO SEGUINDO AS INFORMAÇÕES:
+
+IP -> 192.168.10.Nº
+MASCARA -> 255.255.255.0
+GATEWAY -> 192.169.10.254
+DNS -> 192.168.10.253
+
+
+===========================================
+
+1) cd /tmp
+2) rm -rf
+3) mkdir system
+4) cp -rp /etc/passwd system
+   cp -rp /etc/group system	
+   cp -rp /home system
+   cp -rp /var/log/kern* system
+5)	cd /proc
+	cat cpuinfo | grep -1 mhz
+	lspci | grep -1 ethernet
+	lshw | grep -1 etchernet
+	sudo fdisk -l | grep -1 gb
+	free -n
+	uptime
+6) ifconfg
+   route -n
+
+7)
+
+echo "Acessando diretório /tmp e excluindo conteúdo"
+sleep 2
+echo ""
+cd /tmp
+rm -rf * > /dev/null
+echo ""
+echo "[TECLE ENTER PARA CONTINUAR]"
+read x
+clear
+
+echo "Criando pasta System"
+sleep 2
+echo ""
+mkdir system
+echo ""
+echo "[TECLE ENTER PARA CONTINUAR]"
+read x
+clear
+
+echo "Copiando para a pasta system..."
+sleep 2
+echo "/etc/passwd"
+sleep 2
+echo "/etc/etc"
+sleep 2
+echo "/home"
+sleep 2
+echo "/var/log/kern* system"
+cp -rp /etc/passwd system
+cp -rp /etc/group system	
+cp -rp /home system
+cp -rp /var/log/kern* system
+echo ""
+echo "[TECLE ENTER PARA CONTINUAR]"
+read x
+clear
+
+

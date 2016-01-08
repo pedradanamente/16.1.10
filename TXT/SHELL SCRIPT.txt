@@ -1,0 +1,20 @@
+#!/bin/bash
+clear
+echo “Digite os numeros”
+echo “ “
+echo -n “ Numero 1: “
+read n1
+echo -n “ Numero 2: “
+read n2
+echo -n “ Numero 3: “
+read n3
+echo -n “ Numero 4: “
+read n4
+echo “ “
+echo “Pressione uma tecla para visualizar os números digitados”
+read x
+clear
+echo “Numero 1: $n1”
+echo “Numero 2: $n2”
+echo “Numero 3: $n3”
+echo “Numero 4: $n4”

@@ -1,0 +1,110 @@
+	- REVISÃO SO LINUX
+	- LINUX TCP/IP
+	- HARDWARE x DISTRIBUIÇÕES
+	- GERENCIAMENTO DE PROCESSOS
+	- CONFIGURAÇÃO DE REDE
+	- ADMINISTRAÇÃO DE USUÁRIOS/GRUPOS
+		POLITICA DE CONTAS
+		CADASTRO
+		PERMISSÕES
+	- SERVIDORES:
+		ARQUIVOS NTFS
+		DHCP
+		ACESSO REMOTO SSH
+		WEB (LAMP)
+	- SHELL SCRIPT
+
+	AVALIAÇÕES:
+
+		2 PROVAS OBJETIVAS
+		TRABALHOS
+=================================================================
+
+
+		***REVISÃO SO LINUX***
+
+
+>Multiplataforma
+>Suporte a arquiteturas
+	x64
+	x86
+	AMD64
+	SPARC
+	ARM
+>Compatibilidade com diversos sistemas de arquivos
+>Criptografia nativa de arquivos e diretórios
+>Suporte a RAID por Software
+>Suporte a LTSP
+>Suporte a Cluster System
+>Podemos instalar 2 ou mais versões e usar os mesmo arquivos
+>Podemos aplicar paths de correção a quente
+>Facilidade no Backup e Restore
+	
+	
+	- ESTRUTURA 
+
+ / => O diretório raiz, representado pela "/", é específico de cada máquina. Pode ficar tanto em um disco físico quanto na memória da máquina ou em uma unidade de rede. É o diretório principal, que contém todos os arquivos e diretórios do sistema.
+
+/bin => Arquivos binários de comandos essenciais do sistema.
+
+/boot => Arquivos de boot (inicialização; boot-loader; Grub); kernel do Linux.
+
+/dev => Dispositivos (devices) de entrada/saída: floppy, hardisk, cdrom, modem .
+
+/etc => Arquivos de configuração (scripts) e inicialização.
+
+/home => Diretório local (home) de usuários.
+
+/lib => Bibliotecas e módulos(drives): compartilhadas com freqüência.
+
+/mnt => Diretório de montagem de dispositivos, sistemas de arquivos e partição.
+
+/opt => Para instalação de programas não oficiais da distribuição.
+
+/proc => Diretório virtual (RAM) onde rodam os processos ativos.
+
+/root => Diretório local do superusuário (root).
+
+/sbin => Arquivos de sistema essenciais (binários do superusuário).
+
+/tmp => Arquivos temporários gerados por alguns utilitários.
+
+/usr => Arquivos de usuários nativos da distribuição.
+
+/usr/local => Para instalação de programas não oficiais da distribuição.
+
+/usr/src => Arquivos fontes do sistema necessários para compilar o kernel.
+
+/var => Arquivos de log e outros arquivos variáveis.
+	
+	- COMANDOS
+
+	>Para comandos e diretórios Linux: 						http://www.danbp.org/linuxcom.html
+
+CP -R => Copia os arquivos de um diretório/pasta para outro diretório/pasta.
+LS -R => Lista os arquivos de um diretório.
+FIND / -NAME => Procura arquivos 
+LOCATE => ""
+FIND / -NAME => ""
+FSCK => Checar sistema de arquivos.
+MKFS => Formatador
+INIT => Alterar o nível de execução
+EXPORTFS => Mostra compartilhamentos
+PING => Testa comunicação em rede
+NANO => Editor de texto
+VI => ""
+TRACEROUTE => vERIFICAR CAMINHO 
+ROUTE -N => INFORMA O GATEWAY
+NETSTAT => EXIBE CONEXÕES ATIVAS
+IFCONFIG => IPCONFIG
+SMBCLIENT =>  ACESSAR COMPARTILHAMENTO WINDOWS
+TAIL => EXIBE 10 ÚLTIMAS ATIVIDADES
+DHCLIENT => CLIENTE DHCP (SOLICITAR UM IP)
+TCPDUMP => MONITORAR TRÁFEGO NA REDE
+DF => ESPAÇO EM DISCO
+MOUNT => ACESSAR DISPOSITIVO
+UMOUNT => FINALIZAR ACESSO AO DISPOSITIVO
+UPTIME => INFORMA TEMPO ATIVO DO SISTEMA
+HWCLOCK => INFORMA DATA/HORA BIOS 
+LSPCI => MOSTRA DISPOSITIVOS ONBOARD E OFFBOARD
+	

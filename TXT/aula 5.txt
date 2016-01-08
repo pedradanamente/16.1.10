@@ -1,0 +1,38 @@
+CONFIGURAÇÕES DE REDE
+
+-> efetuada editando arquivos
+-> conforme a distribuição linux utilizada podemos editar 3 ou 4 arquivos. Sendo 3 arquivos na família debian e 4 arquivos ma família redhat
+-> cada arquivo tem uma função específica
+-> não existe uma sequencia obrigatoria, mas sim, uma sequencia lógica
+-> antes de editar os arquivos, devemos, identificar a placa de rede
+
+COMO FAZER
+-> sudo su
+-> para saber a placa de rede usa-se o comando ifconfig | grep eth -- para rede a cabo, se fosse sem fio seria wlan no lugar de "eth",  tb pode se usar o comando lshw | grep eth
+-> arquicos a serem editados
+1) /etc/network/interfaces
+  -> define a consiguração IP(fixo|dhcp)
+  -> define IP gateway
+  -> alguns ajustes de rede
+2) /etc/resolv.conf
+  -> define o endereço IP dos servidores DNS
+  -> define o nome do domínio local para consulta DNS preferencial
+3) /etc/hosts
+  -> define o localhost
+  -> define a configuração dos dados de seu host
+
+para reiniciar o serviço de rede usa se o comando invoke-rs.d networking restart
+
+1) no priemiro arquivo 
+auto eth0
+
+para ver i ip ifconfig
+iface eth0  inet dhoppara ver o gateway usa se o comando reoute -n
+
+para configurar com comandos 
+http://www.hardware.com.br/tutoriais/configurando-rede-linux/pagina6.html
+e deichar salvo vai no diretrorio /etc/rc.local e na ultimna linha coloca-se os comando ali no arquivo.
+
+
+
+
